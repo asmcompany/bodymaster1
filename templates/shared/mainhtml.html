@@ -1,0 +1,36 @@
+{% load static %}
+{% load render_partial %}
+
+<!DOCTYPE html>
+
+<!-- BEGIN html -->
+<html>
+
+	<!-- BEGIN head -->
+	<head>
+
+		<!-- Title -->
+		<title>فروشگاه مکمل</title>
+
+		<!-- Meta tags -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=100%; initial-scale=1; minimum-scale=1;" />
+
+		{% include "shared/headerlink.html" %}
+	<!-- END head -->
+	</head>
+
+	<!-- BEGIN body -->
+	<body class="top">
+
+        {% render_partial "headerpartial" %}
+        {% block dastsaz_bala %}{% endblock %}
+        
+        {% block content %}{% endblock %}
+	    {% include "shared/footerlink.html" %}
+        {% block dastsaz_payon %}{% endblock %}
+	<!-- END body -->
+	</body>
+
+<!-- END html -->
+</html>

@@ -1,0 +1,48 @@
+{% extends "shared/mainhtml.html" %}
+{% load static %}
+
+{% block content %}
+
+    	<div class="featured-items clearfix">
+
+					<div class="main-title clearfix">
+						<p style=" ">
+نمونه محصولات
+</p>
+						<a href="#" class="view">
+مشاهده موارد بیشتر
+</a>
+					</div>
+
+                <div class="items clearfix">
+    {% for product in object_list %}
+        {% include "products/product_inculod.html"  %}
+    {% endfor %}
+
+
+					</div>
+
+
+ <div class="clearfix"></div>
+                        <ul class="pagination sia">
+                            {% if page_obj.has_previous %}
+                                <li><a href="?page={{ page_obj.previous_page_number }}">قبلی</a></li>
+                            {% endif %}
+                            {% for page in paginator.page_range %}
+                                {% if page == page_obj.number %}
+                                    <li class="active"><a href="?page={{ page }}">{{ page }}</a></li>
+                                {% else %}
+                                    <li><a href="?page={{ page }}">{{ page }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                            {% if page_obj.has_next %}
+                                <li><a href="?page={{ page_obj.next_page_number }}">بعدی</a></li>
+                            {% endif %}
+                        </ul>
+                    </div><!--features_items-->
+
+				<!-- END .featured-items -->
+
+
+
+{% endblock %}

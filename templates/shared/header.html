@@ -1,0 +1,102 @@
+{% load static %}
+<!-- BEGIN .main-header -->
+			<header class="main-header clearfix">
+				<div class="row">
+					<a href="{% static "pandora-homepage.html" %}" class="logo">shop1
+
+</a>
+					<span class="slogan">
+مکمل های اوجینال
+</span>
+					<div class="menu">
+						<a href="{% static "pandora-cart.html" %}" class="cart">
+0 آیتم (0.00 $ در مجموع)
+
+0 آیتم (0.00 $ در مجموع)
+</a>
+						<a href="{% static "pandora-checkout-step-1.html" %}" class="checkout">پرداخت</a>
+                         {% if not request.user.is_authenticated %}
+                            <a href="/login">{{ test }}</a>
+                            <a href="/register">ثبت نام</a>
+                            {% else %}
+
+                                <a href="/">خروج</a>
+                        {% endif %}
+
+
+
+
+					</div>
+					<form action="#" class="search">
+						<input type="text" placeholder="search here" />
+					</form>
+				</div>
+				<div class="row _user_auth">
+					<form action="#" class="login">
+						<label>ثبت در:</label>
+						<input type="text" placeholder="e-mail address" />
+						<p><input type="password" placeholder="password" /><a href="#" class="password">
+فراموش ؟
+</a></p>
+						<button type="button">
+ورود به سیستم در
+</button>
+						<button type="button" class="guest">
+همچنان به عنوان مهمان
+</button>
+					</form>
+				</div>
+				<nav class="main-menu">
+					<ul>
+						<li ><a href="/" class="trans-1">صفحه اصلی</a></li>
+                        <li><a href="/product">فروشگاه</a></li>
+{#                        <li><a href="/product">هر انچه راجبه مکمل باید بدانیم</a></li>#}
+						<li>
+							<a href="/info"><span>هر انچه راجبه مکمل باید بدانیم</span></a>
+
+						</li>
+{#						<li>#}
+{#							<a href="{% static "pandora-catalog.html" %}"><span>مرد</span></a>#}
+{#							<ul>#}
+{#								<li><a href="{% static "pandora-catalog.html" %}">#}
+{#پیراهن و ژاکت#}
+{#</a></li>#}
+{#								<li><a href="{% static "pandora-catalog.html" %}">#}
+{#شلوار و شلوارک#}
+{#</a></li>#}
+{#								<li><a href="{% static "pandora-catalog.html" %}">#}
+{##}
+{#لورم ایپسوم یا طرح‌نما</a></li>#}
+{#								<li><a href="{% static "pandora-catalog.html" %}">#}
+{#کاپشن و کت#}
+{#</a></li>#}
+{#							</ul>#}
+						</li>
+{#						<li><a href="{% static "pandora-blog.html" %}">وبلاگ</a></li>#}
+						<li><a href="/aboutus">
+تماس و اطلاعات
+</a></li>
+{#						<li><a href="{% static "pandora-single.html" %}">ویژگی ها</a></li>#}
+
+                      
+
+					</ul>
+					<select class="navigationSelector">
+						<option value="pandora-catalog.html">
+منوی اصلی
+</option>
+						<option value="pandora-catalog.html">مرد</option>
+						<option value="pandora-catalog.html">زن</option>
+						<option value="pandora-blog.html">وبلاگ</option>
+						<option value="pandora-single.html">
+تماس و اطلاعات
+</option>
+						<option value="pandora-single.html">ویژگی ها</option>
+					</select>
+					<form action="/product/search" class="search">
+                        <input type="text" placeholder="جستجو محصولات:" value="{{ request.GET.get }}" name="q"/>
+
+					</form>
+				</nav>
+			<!-- END .main-header -->
+            </header>

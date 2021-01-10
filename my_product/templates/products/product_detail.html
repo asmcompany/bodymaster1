@@ -1,0 +1,212 @@
+{% extends "shared/mainhtml.html" %}
+{% load static  %}
+
+{% block content %}
+
+{#<section class="main-navigation clearfix">#}
+{#				<nav>#}
+{#					<div class="navigation">#}
+{#						<a href="#">صفحه اصلی</a>#}
+{#						<a href="#">کاتالوگ</a>#}
+{#						<a href="#">زن</a>#}
+{#						<a href="#">#}
+{#بلوز و شوميز#}
+{#</a>#}
+{#						<a href="#">تی شرت با شلوار</a>#}
+{#					</div>#}
+{#					<div class="title">#}
+{##}
+{#بلوز و شوميز#}
+{##}
+{#					</div>#}
+{#				</nav>#}
+{#			<!-- END .main-navigation -->#}
+{#			</section>#}
+
+
+
+			<section class="main-content-wrapper main-item-wrapper clearfix" style="padding-bottom: 415px;">
+
+				<!-- BEGIN .main-item -->
+				<section class="main-item clearfix">
+
+					<div class="item-block-1">
+						<div class="image-wrapper" id="_single-product-slider" style="overflow: hidden;">
+							<div class="image" style="position: absolute; top:0px; right: 0px; display: block; z-index: 4; opacity: 1;">
+								<a href=  "{% static "images/photos/photo-11.jpg" %}" class="lightbox-launcher"><img src="{{ product.image.url }}" alt=""></a>
+							</div>
+							<div class="image" style="position: absolute; top: 0px; right: 0px; display: none; z-index: 2;">
+								<a href="images/photos/photo-11.jpg" class="lightbox-launcher"><img src="{{ product.image.url }}" alt=""></a>
+							</div>
+							<div class="image" style="position: absolute; top: 0px; right: 0px; display: none; z-index: 1;">
+								<a href="images/photos/photo-11.jpg" class="lightbox-launcher"><img src="{{ product.image.url }}" alt=""></a>
+							</div>
+						</div>
+						<div class="thumbnails clearfix">
+							<a href="#" class="next"></a>
+							<div>
+								<a href="#" class="active"><img src="{% static "images/photos/photo-12.jpg" %}" alt=""></a>
+								<a href="#"><img src="{% static "images/photos/photo-13.jpg" %}" alt=""></a>
+								<a href="#"><img src="{% static "images/photos/photo-14.jpg" %}" alt=""></a>
+							</div>
+							<a href="#" class="previous"></a>
+						</div>
+					</div>
+
+					<div class="item-info">
+<h2>{{ product.title }}</h2>
+						<p class="item-text">
+						{{ product.description }}
+						</p>
+
+						<div class="price">
+							<h2>{{ product.price }}</h2>
+						</div>
+						<div class="buy">
+							<button type="button">افزودن به سبد خرید</button>
+						</div>
+					</div>
+
+				<!-- END .main-item -->
+				</section>
+
+				<!-- BEGIN .featured-items -->
+				<div class="featured-items clearfix">
+
+					<div class="main-title clearfix">
+						<p>
+آیتم های مرتبط
+</p>
+						<a href="#" class="view">
+مشاهده موارد بیشتر
+</a>
+					</div>
+
+					<div class="items clearfix">
+
+						<div class="item-block-1">
+							<div class="image-wrapper">
+								<div class="image">
+									<div class="overlay">
+										<div class="position">
+											<div>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+												<a href="#" class="quickshop">
+فروشگاه سریع
+</a>
+											</div>
+										</div>
+									</div>
+									<a href="#"><img src="images/photos/photo-2.jpg" style="margin: -27.5px 0 0 0;" alt=""></a>
+								</div>
+							</div>
+							<h2><a href="#">لباس راه راه آشپز </a></h2>
+							<p class="price">$29.99</p>
+						</div>
+
+						<div class="item-block-1">
+							<span class="tag-sale"></span>
+							<div class="image-wrapper">
+								<div class="image">
+									<div class="overlay">
+										<div class="position">
+											<div>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+												<a href="#" class="quickshop">
+فروشگاه سریع
+</a>
+											</div>
+										</div>
+									</div>
+									<a href="#"><img src="images/photos/photo-3.jpg" style="margin: -32.5px 0 0 0;" alt=""></a>
+								</div>
+							</div>
+							<h2><a href="#"> سبک بلوز آبی</a></h2>
+							<p class="price">$13.99<s>$36.99</s></p>
+						</div>
+
+						<div class="item-block-1">
+							<div class="image-wrapper">
+								<div class="image">
+									<div class="overlay">
+										<div class="position">
+											<div>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+												<a href="#" class="quickshop">
+فروشگاه سریع
+</a>
+											</div>
+										</div>
+									</div>
+									<a href="#"><img src="images/photos/photo-4.jpg" style="margin: -28px 0 0 0;" alt=""></a>
+								</div>
+							</div>
+							<h2><a href="#">ژاکت </a></h2>
+							<p class="price">$33.99</p>
+						</div>
+
+						<div class="item-block-1">
+							<div class="image-wrapper">
+								<div class="image">
+									<div class="overlay">
+										<div class="position">
+											<div>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+												<a href="#" class="quickshop">
+فروشگاه سریع
+</a>
+											</div>
+										</div>
+									</div>
+									<a href="#"><img src="images/photos/photo-5.jpg" style="margin: -28px 0 0 0;" alt=""></a>
+								</div>
+							</div>
+							<h2><a href="#">ژاکت</a></h2>
+							<p class="price">$33.99</p>
+						</div>
+
+					</div>
+
+				<!-- END .featured-items -->
+				</div>
+
+				<!-- BEGIN .special-offers -->
+				<div class="special-offers clearfix">
+
+					<div class="main-title clearfix">
+						<p>
+پیشنهادات ویژه
+</p>
+					</div>
+
+					<a href="#" class="sale">
+						<span class="title">فروش</span>
+						<span class="description">
+همه موارد فروش را بررسی کنید
+</span>
+						<span class="background"></span>
+					</a>
+
+					<a href="#" class="percent-off">
+						<span class="title">50% off</span>
+						<span class="description">
+در تمام لباس زمستان و لوازم
+</span>
+						<span class="background"></span>
+					</a>
+
+					<a href="#" class="specials">
+						<span class="title">جدید</span>
+						<span class="description">
+لباس ورزشی تخصصی
+</span>
+						<span class="background"></span>
+					</a>
+
+				<!-- END .special-offers -->
+				</div>
+
+			<!-- END .main-content-wrapper -->
+			</section>
+
+{% endblock %}

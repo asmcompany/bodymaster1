@@ -1,0 +1,454 @@
+{% extends "shared/mainhtml.html" %}
+{% load static %}
+{% load render_partial %}
+
+{% block content %}
+    	<!-- BEGIN .quick-shop -->
+		<div class="quick-shop clearfix">
+			<div class="content clearfix">
+
+				<div class="item-block-1">
+					<div class="image-wrapper" id="_quick-shop-product-slider">
+						<div class="image">
+							<a href="#"><img src="{% static "images/photos/photo-11.jpg" %}" alt="" /></a>
+						</div>
+						<div class="image">
+							<a href="#"><img src="{% static "images/photos/photo-11.jpg" %}" alt="" /></a>
+						</div>
+						<div class="image">
+							<a href="#"><img src="{% static "images/photos/photo-11.jpg" %}" alt="" /></a>
+						</div>
+					</div>
+					<div class="thumbnails clearfix">
+						<a href="#" class="next"></a>
+						<div>
+							<a href="#" class="active"><img src="{% static "images/photos/photo-12.jpg" %}" alt="" /></a>
+							<a href="#"><img src="{% static "images/photos/photo-13.jpg" %}" alt="" /></a>
+							<a href="#"><img src="{% static "images/photos/photo-14.jpg" %}" alt="" /></a>
+						</div>
+						<a href="#" class="previous"></a>
+					</div>
+				</div>
+
+				<div class="main-item">
+					<div class="item-info">
+						<h2><a href="#">تی شرت با شلوار</a></h2>
+						<p class="item-text">
+						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است<b>
+
+لورم ایپسوم یا طرح‌نما</b>لورم ایپسوم متن ساختگی با تولید سادگی
+						</p>
+						<div class="details clearfix">
+							<form action="#">
+								<p class="item">
+									<label>
+اندازه خود را انتخاب کنید:
+</label>
+									<select>
+										<option>
+خیلی بزرگ (XL)
+</option>
+										<option>بزرگ (L)</option>
+										<option>
+متوسط (M)
+</option>
+										<option>
+کوچک (S)
+</option>
+									</select>
+								</p>
+								<p class="item">
+									<label>
+شما رنگ را انتخاب کنید:
+</label>
+									<select>
+										<option>
+آبی با نقطه های سفید
+</option>
+										<option>
+سفید با نقطه های آبی
+</option>
+										<option>
+خاکستری با نقاط سیاه و سفید
+</option>
+									</select>
+								</p>
+								<p class="item quantity">
+									<label>
+مقدار:
+</label>
+									<select>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</p>
+								<p class="item">
+									<label>
+به اشتراک گذاشتن این مورد:
+</label>
+									<span class="social-icons clearfix">
+										<span class='st_facebook_custom facebook'></span>
+										<span class='st_twitter_custom twitter'></span>
+										<span class='st_linkedin_custom linkedin'></span>
+										<span class='st_stumbleupon_custom stumbleupon'></span>
+										<span class='st_blogger_custom blogspot'></span>
+									</span>
+									<a href="#" class="more st_sharethis_custom">بیشتر</a>
+								</p>
+								<p class="item">
+									<label>
+برچسب ها:
+</label>
+									<span class="tags">
+										<a href="#">
+
+لورم ایپسوم</a>
+										<a href="#">
+
+لورم </a>
+										<a href="#">تابستان</a>
+									</span>
+								</p>
+							</form>
+						</div>
+						<div class="price">
+							$13.99<s>$36.99</s>
+						</div>
+						<div class="buy">
+							<button type="button">افزودن به سبد خرید</button>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="close"></a>
+
+			</div>
+		<!-- END .quick-shop -->
+		</div>
+
+		<!-- BEGIN .main-body-wrapper -->
+		<div class="main-body-wrapper">
+
+
+
+
+			<!-- BEGIN .main-slider -->
+			<section class="main-slider">
+
+				<div class="paging">
+					<a href="#" class="previous"></a>
+					<a href="#" class="next"></a>
+				</div>
+
+				<nav>
+					<span id="pager">
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					</span>
+				</nav>
+
+				<div id="hompage-slider_content">
+
+					<!-- BEGIN .item -->
+					<div class="item" style="background-image: url({% static "images/photos/slider.jpg" %})  ; background-size: cover">
+{#						<div class="title-wrapper clearfix">#}
+{#							<div class="title">#}
+{#								<p class="clearfix"><a href="#" class="headline">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </a></p>#}
+{#								<p class="clearfix"><a href="#" class="intro">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</a></p>#}
+{#							</div>#}
+{#						</div>#}
+						<img src="{% static "images/blank.png"  %}" alt="" />
+					<!-- END .item -->
+					</div>
+
+					<!-- BEGIN .item -->
+					<div class="item" style="background-image:  url({% static "images/photos/slider2.jpg" %}) ; background-size: cover;">
+						<div class="title-wrapper clearfix">
+							<div class="title">
+
+							</div>
+						</div>
+						<img src="{% static "images/blank.png"  %}" alt="" />
+					<!-- END .item -->
+					</div>
+
+					<!-- BEGIN .item -->
+					<div class="item" style="background-image:  url({% static "images/photos/slider3.jpg" %}) ; background-size: cover;">
+						<div class="title-wrapper clearfix">
+							<div class="title">
+
+							</div>
+						</div>
+						<img src="{% static  "images/blank.png" %}" alt="" />
+					<!-- END .item -->
+					</div>
+
+					<!-- BEGIN .item -->
+					<div class="item" style="background-image:  url({% static "images/photos/slider5.jpg" %}) ; background-size: cover;">
+						<div class="title-wrapper clearfix">
+
+						</div>
+						<img src="{% static  "images/blank.png" %}" alt="" />
+					<!-- END .item -->
+					</div>
+
+				</div>
+
+			<!-- END .main-slider -->
+			</section>
+
+			<!-- BEGIN .main-content-wrapper -->
+		<section class="main-content-wrapper clearfix">
+
+				<!-- BEGIN .welcome-message-1 -->
+				<div class="welcome-message-1">
+					<h2>
+خوش آمدید به
+<span>فروشگاه ما</span>
+
+امیر و محمد</h2>
+					<p><b>
+دیگر پلتفرم های ما
+</b></p>
+					<p><b>Pandora</b>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+				<!-- END .welcome-message-1 -->
+				</div>
+<div class="special-offers clearfix" style="text-align: center;">
+
+<div style=" display: inline-block; margin: 0 auto; ">
+    <a href="/product" class="sale">
+						<span class="title">
+ مکمل
+</span>
+						<span class="description">
+همه موارد فروش را بررسی کنید
+</span>
+						<span class="background"></span>
+					</a>
+
+</div>
+
+
+</div>
+				<!-- BEGIN .featured-items -->
+
+				<div class="featured-items clearfix">
+
+
+
+				<!-- ************* inja mostatile raro bayad bezaram****** -->
+
+				<!-- END .featured-items -->
+				</div>
+
+				<!-- BEGIN .special-offers -->
+				<div class="special-offers clearfix">
+
+
+
+					<div class="main-title clearfix">
+
+						<p>
+پیشنهادات ویژه
+</p>
+					</div>
+
+					<a href="/product" class="sale">
+						<span class="title">
+ مکمل
+</span>
+						<span class="description">
+همه موارد تخفیف دار
+</span>
+						<span class="background"></span>
+					</a>
+
+					<a href="/product" class="percent-off">
+						<span class="title">50% off</span>
+						<span class="description">
+بهترین مکمل
+</span>
+						<span class="background"></span>
+					</a>
+
+					<a href="/product" class="specials">
+						<span class="title">جدید</span>
+						<span class="description">
+لباس ورزشی تخصصی
+</span>
+						<span class="background"></span>
+					</a>
+
+				<!-- END .special-offers -->
+				</div>
+
+				<!-- BEGIN .homepage-columns -->
+				<div class="homepage-columns clearfix" dir=ltr>
+
+					<div class="blog">
+
+						<div class="main-title clearfix">
+							<p>
+از اخبار وبلاگ
+</p>
+						</div>
+
+						<div class="items">
+
+							<div class="item">
+								<h2><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a></h2>
+								<div class="title-details">
+									<a href="#" class="time">May 23, 2012</a>
+									<a href="#" class="comments">6</a>
+								</div>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است<a href="#" class="more-link">
+ادامه مطلب
+<b>+</b></a></p>
+							</div>
+
+							<div class="item">
+								<h2><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a></h2>
+								<div class="title-details">
+									<a href="#" class="time">May 15, 2012</a>
+									<a href="#" class="comments">12</a>
+								</div>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است<a href="#" class="more-link">
+ادامه مطلب
+<b>+</b></a></p>
+							</div>
+
+							<div class="item">
+								<h2><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a></h2>
+								<div class="title-details">
+									<a href="#" class="time">May 11, 2012</a>
+									<a href="#" class="comments">0</a>
+								</div>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است<a href="#" class="more-link">
+ادامه مطلب
+<b>+</b></a></p>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- BEGIN .best-sellers -->
+					<div class="best-sellers">
+
+						<div class="main-title clearfix">
+							<p>
+بهترین فروشندگان
+</p>
+						</div>
+
+						<div class="items">
+
+							<div class="item-block-1">
+								<span class="tag-sale"></span>
+								<div class="image-wrapper">
+									<div class="image">
+										<div class="overlay">
+											<div class="position">
+												<div>
+													<a href="#" class="view">
+مشاهده بیشتر
+</a>
+												</div>
+											</div>
+										</div>
+										<a href="#"><img src="images/photos/photo-10.jpg" style="margin: -10px 0 0 0;" alt="" /></a>
+									</div>
+								</div>
+								<p class="price">$9.99</p>
+							</div>
+
+							<div class="item-block-1">
+								<div class="image-wrapper">
+									<div class="image">
+										<div class="overlay">
+											<div class="position">
+												<div>
+													<a href="#" class="view">
+مشاهده بیشتر
+</a>
+												</div>
+											</div>
+										</div>
+										<a href="#"><img src="images/photos/photo-7.jpg" style="margin: -30px 0 0 0;" alt="" /></a>
+									</div>
+								</div>
+								<p class="price">$59.99</p>
+							</div>
+
+							<div class="item-block-1">
+								<div class="image-wrapper">
+									<div class="image">
+										<div class="overlay">
+											<div class="position">
+												<div>
+													<a href="#" class="view">
+مشاهده بیشتر
+</a>
+												</div>
+											</div>
+										</div>
+										<a href="#"><img src="images/photos/photo-5.jpg" style="margin: -30px 0 0 0;" alt="" /></a>
+									</div>
+								</div>
+								<p class="price">$29.99</p>
+							</div>
+
+							<div class="item-block-1">
+								<div class="image-wrapper">
+									<div class="image">
+										<div class="overlay">
+											<div class="position">
+												<div>
+													<a href="#" class="view">
+مشاهده بیشتر
+</a>
+												</div>
+											</div>
+										</div>
+										<a href="#"><img src="images/photos/photo-9.jpg" style="margin: -10px 0 0 0;" alt="" /></a>
+									</div>
+								</div>
+								<p class="price">$29.99</p>
+							</div>
+
+						</div>
+
+					<!-- END .best-sellers -->
+					</div>
+
+					<!-- BEGIN .about-us -->
+					<div class="about-us">
+
+						<div class="main-title clearfix">
+							<p>
+مخاطبین و اطلاعات
+</p>
+						</div>
+
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+						<a href="#" class="phone">09120727239</a>
+						<a href="#" class="email">hjamir75@gmail.com</a>
+
+					<!-- END .about-us -->
+					</div>
+
+				<!-- END .homepage-columns -->
+				</div>
+
+			<!-- END .main-content-wrapper -->
+			</section>
+            {% render_partial "footerpartial" %}
+
+
+		<!-- END .main-body-wrapper -->
+		</div>
+  {% endblock %}

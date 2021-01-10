@@ -1,0 +1,20 @@
+{% load static %}
+         <div class="item-block-1">
+							<div class="image-wrapper">
+								<div class="image">
+									<div class="overlay">
+										<div class="position">
+											<div>
+												<p>{{ product.description }}</p>
+												<a href="#" class="quickshop">
+فروشگاه سریع
+</a>
+											</div>
+										</div>
+									</div>
+									<a href="{% static "pandora-item.html"  %}"><img src="{{ product.image.url }}" style="margin: 0.5px 0 0 0;" alt="" /></a>
+								</div>
+							</div>
+							<h2><a href="/product-detail/{{ product.id }}/{{ product.title }}">{{ product.title }}</a></h2>
+							<p class="price">{{ product.price }}</p>
+						</div>
